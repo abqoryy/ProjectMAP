@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LamboList">
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="match_parent"
+       android:layout_height="100dp"
+       app:cardBackgroundColor="@color/orange">
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_margin="5dp">
+
+           <TextView
+               android:id="@+id/lambo_title"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/inter_bold"
+               android:text="Lamborghini"
+               android:textColor="@color/black"
+               android:textSize="40dp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.722"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintVertical_bias="0.38" />
+
+           <TextView
+               android:id="@+id/lambo_slogan"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:fontFamily="@font/inter"
+               android:text="We are not Supercars. We are Lamborghini"
+               android:textColor="@color/black"
+               android:textSize="12dp"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.754"
+               app:layout_constraintStart_toStartOf="@+id/lambo_logo"
+               app:layout_constraintTop_toBottomOf="@+id/lambo_title"
+               app:layout_constraintVertical_bias="0.0" />
+
+           <ImageView
+               android:id="@+id/lambo_logo"
+               android:layout_width="110dp"
+               android:layout_height="90dp"
+               android:background="@drawable/lambologo"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.006"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+   </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewLambo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:itemCount="5"
+        android:background="@color/chinese_silver"
+        tools:listitem="@layout/lambo_item" />
+</LinearLayout>
