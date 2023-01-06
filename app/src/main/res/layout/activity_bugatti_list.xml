@@ -6,12 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".PaganiList">
+    tools:context=".BugattiList">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        app:cardBackgroundColor="@color/orange">
+        app:cardBackgroundColor="@color/blue">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -19,44 +19,42 @@
             android:layout_margin="5dp">
 
             <TextView
-                android:id="@+id/pagani_title"
+                android:id="@+id/bugatti_title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/inter_bold"
-                android:text="Pagani"
-                android:textColor="@color/black"
+                android:text="Bugatti"
+                android:textColor="@color/white"
                 android:textSize="40dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/pagani_logo"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.437" />
+                app:layout_constraintVertical_bias="0.375" />
 
             <TextView
-                android:id="@+id/pagani_slogan"
+                android:id="@+id/bugatti_slogan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="24dp"
                 android:fontFamily="@font/inter"
-                android:text="The car atelier surpasses time, like an unrelenting wind"
-                android:textColor="@color/black"
+                android:text="If it is comparable, it is no longer Bugatti"
+                android:textColor="@color/white"
                 android:textSize="12dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toEndOf="@+id/pagani_logo"
-                app:layout_constraintTop_toBottomOf="@+id/pagani_title"
+                app:layout_constraintHorizontal_bias="0.77"
+                app:layout_constraintStart_toStartOf="@+id/bugatti_logo"
+                app:layout_constraintTop_toBottomOf="@+id/bugatti_title"
                 app:layout_constraintVertical_bias="0.0" />
 
             <ImageView
-                android:id="@+id/pagani_logo"
-                android:layout_width="140dp"
+                android:id="@+id/bugatti_logo"
+                android:layout_width="110dp"
                 android:layout_height="90dp"
-                android:background="@drawable/paganilogo"
+                android:background="@drawable/bugattilogo"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.19"
+                app:layout_constraintHorizontal_bias="0.054"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0" />
@@ -65,7 +63,7 @@
     </androidx.cardview.widget.CardView>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerviewPagani"
+        android:id="@+id/recyclerviewBugatti"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:itemCount="5"

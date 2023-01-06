@@ -12,4 +12,7 @@
     <color name="orange">#CF691E</color>
     <color name="chinese_silver">#CCCCCC</color>
     <color name="green_light">#64C34B</color>
+    <color name="maroon">#7B1113</color>
+    <color name="gray_splash">#231E1E</color>
+    <color name="gray_x11">#B2BEC3</color>
 </resources>

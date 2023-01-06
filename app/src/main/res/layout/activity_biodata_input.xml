@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_x11"
+    tools:context=".BiodataInput"
+    >
+
+    <TextView
+        android:id="@+id/label_masukkandata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="Masukkan Data Anda"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <EditText
+        android:id="@+id/et_name_biodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgfieldlogin"
+        android:ems="15"
+        android:hint="Please input your Name"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:textColorHint="@color/gray_x11"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_masukkandata"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <TextView
+        android:id="@+id/label_name_biotada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="Nama"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/et_name_biodata"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.102"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_masukkandata"
+        app:layout_constraintVertical_bias="0.648" />
+
+    <TextView
+        android:id="@+id/label_address_biotada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="Address"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name_biodata"
+        app:layout_constraintVertical_bias="0.051" />
+
+    <EditText
+        android:id="@+id/et_address_biodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgfieldlogin"
+        android:ems="15"
+        android:hint="Please input your Address"
+        android:inputType="textPostalAddress"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name_biodata"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <TextView
+        android:id="@+id/label_contact_biotada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="Contact"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_address_biodata"
+        app:layout_constraintVertical_bias="0.081" />
+
+
+    <EditText
+        android:id="@+id/et_contact_biodata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bgfieldlogin"
+        android:ems="15"
+        android:hint="Please input your Contact"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/label_masukkandata"
+        app:layout_constraintVertical_bias="0.504" />
+
+    <Button
+        android:id="@+id/btn_pesan_final"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:background="@color/maroon"
+        android:text="PESAN MOBIL SEKARANG"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_contact_biodata"
+        app:layout_constraintVertical_bias="0.705" />
+
+    <TextView
+        android:id="@+id/label_durasi_pesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="Durasi Peminjaman"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btn_pesan_final"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_contact_biodata"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <EditText
+        android:id="@+id/kotak_durasi"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:background="@drawable/kotak_durasi"
+        android:ems="15"
+        android:inputType="number"
+        android:paddingLeft="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_pesan_final"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_contact_biodata"
+        app:layout_constraintVertical_bias="0.445" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="Hari"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_pesan_final"
+        app:layout_constraintEnd_toEndOf="@+id/et_contact_biodata"
+        app:layout_constraintHorizontal_bias="0.208"
+        app:layout_constraintStart_toEndOf="@+id/kotak_durasi"
+        app:layout_constraintTop_toBottomOf="@+id/et_contact_biodata"
+        app:layout_constraintVertical_bias="0.422" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

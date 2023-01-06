@@ -9,11 +9,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import org.w3c.dom.Text
 
-
-class CustomLamboAdapter(private val mList: List<LamboViewModel>) : RecyclerView.Adapter<CustomLamboAdapter.ViewHolder>() {
+class CustomPorscheAdapter(private val mList: List<PorscheViewModel>) : RecyclerView.Adapter<CustomPorscheAdapter.ViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context)
@@ -24,7 +21,6 @@ class CustomLamboAdapter(private val mList: List<LamboViewModel>) : RecyclerView
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val data = mList[position]
-        Glide.with(holder.img).load(data.img).into(holder.img)
         holder.tvCarName.text = data.car_name
         holder.tvCarPrice.text = data.car_price
         holder.tvSeatCapacityDetail.text = data.seat_capacity
@@ -39,7 +35,6 @@ class CustomLamboAdapter(private val mList: List<LamboViewModel>) : RecyclerView
             intent.putExtra("iTransmission", data.max_power)
             intent.putExtra("imaxPower", data.max_power)
             intent.putExtra("ifuelTank", data.fuel_tank)
-            intent.putExtra("iCarIcon", data.img)
             holder.cardType.context.startActivity(intent)
         }
     }
@@ -55,7 +50,7 @@ class CustomLamboAdapter(private val mList: List<LamboViewModel>) : RecyclerView
         lateinit var tvMaxPower : TextView
         lateinit var tvFuelTankCapacity : TextView*/
 
-        val img : ImageView = view.findViewById(R.id.car_icon)
+
         val cardType : CardView = view.findViewById(R.id.card_car_type)
         val tvCarName : TextView = view.findViewById(R.id.car_name)
         val tvCarPrice : TextView = view.findViewById(R.id.car_price)

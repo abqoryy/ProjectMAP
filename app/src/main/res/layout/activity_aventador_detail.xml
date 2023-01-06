@@ -17,7 +17,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/orange">
+            android:background="@color/green">
 
             <TextView
                 android:id="@+id/car_title"
@@ -26,7 +26,7 @@
                 android:fontFamily="@font/inter_bold"
                 android:textAlignment="center"
                 android:text="Aventador"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="40dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -241,7 +241,7 @@
        <RelativeLayout
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           android:background="@color/orange"
+           android:background="@color/green"
            android:layout_marginTop="20dp">
 
            <ImageButton

@@ -5,9 +5,9 @@ import retrofit2.http.GET
 import retrofit2.http.Header
 
 interface LamboApi {
-    @GET("/rest/v1/lambolist?select=*")
+    @GET("rest/v1/lambodetail?select=*")
     suspend fun get(
         @Header("Authorization") token: String,
         @Header("apikey") apiKey: String
-    ) : Response<List<LamboItem>>
+    ) : Response<List<LamboItemDB>>
 }
